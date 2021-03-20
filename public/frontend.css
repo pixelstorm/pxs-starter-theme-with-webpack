@@ -340,6 +340,12 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h2 {
+  font-family: "Roboto, sans-serif";
+  color: royalblue;
+  position: relative;
+  font-size: largeTitle; }
+
 p {
   margin-bottom: 1.5em; }
 

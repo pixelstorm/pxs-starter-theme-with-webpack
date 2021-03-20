@@ -1,3 +1,15 @@
+//UI KIT Styles
+@mixin title(
+  $color: map-get($color, primary), 
+  $font: map-get($font, primary),
+  $fontsize: map-get($fontsize, large),
+  ) {
+    font-family: $font;
+		color: $color;
+		position: relative;
+    font-size: $fontsize;
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 16) * 1px;
