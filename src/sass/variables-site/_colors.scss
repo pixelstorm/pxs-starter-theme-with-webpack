@@ -21,10 +21,13 @@ $color__border-abbr: #666;
 
 
 $color: (
-
   primary: royalblue,
   secondary: grey,
-
-
-
 );
+
+$greys: (
+
+  light: lightGrey,
+  dark: darkGrey,
+
+)

@@ -6,6 +6,10 @@ Getting Started
 * npm run dev
 
 
+Typography
+---------------
+* set the values of the font variables to match the branding of the design https://github.com/pixelstorm/pxs-starter-theme-with-webpack/blob/main/src/sass/variables-site/_typography.scss
+
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 

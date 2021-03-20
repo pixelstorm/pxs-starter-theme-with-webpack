@@ -20,6 +20,19 @@
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/*
+  titte mixin
+  set by default to use large title
+  override this in the selector by using map-get($key,'newfontsize')
+*/
+/*
+  container sets the padding and content direction
+  paddng can be set for different screensizes
+*/
+/* 
+ * enter px value wrapped in rem() to get px output
+ *
+*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -333,18 +346,28 @@ optgroup,
 textarea {
   color: #404040;
   font-family: sans-serif;
-  line-height: 1.5;
-  font-size: 16px;
-  font-size: 1rem; }
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
+
+h1 {
+  font-family: "Roboto, sans-serif";
+  color: royalblue;
+  position: relative;
+  font-size: 5rem; }
 
 h2 {
   font-family: "Roboto, sans-serif";
   color: royalblue;
   position: relative;
-  font-size: largeTitle; }
+  font-size: 3rem; }
+
+h3 {
+  font-family: "Roboto, sans-serif";
+  color: royalblue;
+  position: relative;
+  font-size: 2rem; }
 
 p {
   margin-bottom: 1.5em; }
@@ -384,6 +407,23 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+html {
+  /*
+   *
+  scale the fonts up for larger devices
+  1rem = 16px
+  *
+  */ }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 60%; } }
+  @media screen and (min-width: 1280px) {
+    html {
+      font-size: 80%; } }
+  @media screen and (min-width: 1440px) {
+    html {
+      font-size: 100%; } }
 
 /*--------------------------------------------------------------
 # Elements
@@ -436,6 +476,24 @@ img {
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */ }
+
+.container {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 768px;
+  padding: 0 7rem; }
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1600px;
+      padding: 0 8rem; } }
+  @media screen and (min-width: 1280px) {
+    .container {
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (min-width: 1440px) {
+    .container {
+      padding: 0 8rem; } }
 
 table {
   margin: 0 0 1.5em;

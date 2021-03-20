@@ -8,8 +8,30 @@ textarea {
 	font-family: $font__main;
 	line-height: $font__line-height-body;
 
-	@include font-size(1);
 }
 
 @import "headings";
 @import "copy";
+
+html {
+
+  /*
+   *
+  scale the fonts up for larger devices
+  1rem = 16px
+  *
+  */
+
+
+    @media screen and (min-width:$md) {
+      font-size: 60%;
+    }
+
+    @media screen and (min-width:$lg) {
+      font-size: 80%;
+    }
+    @media screen and (min-width:$xlg) {
+      font-size: 100%;
+    }
+
+}

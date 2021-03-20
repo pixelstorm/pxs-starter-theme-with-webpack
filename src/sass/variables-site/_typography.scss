@@ -9,11 +9,17 @@ $font: (
   secondary: 'serif',
 );
 
-$fontsize: (
-  largeTitle: '25rem',
-  mediumTitle: '20rem',
-  smallTitle: '17rem',
-  largeParagraph: '15rem',
-  mediumParagraph: '14rem',
-  smallParagraph: '12rem',
+$titleSize: (
+  "large": 5rem,
+  "medium": 3rem,
+  "small": 2rem,
 );
+
+$paragraghSize: (
+
+  "large": 1.2rem,
+  "medium": 1rem,
+  "small": .8rem,
+
+
+)

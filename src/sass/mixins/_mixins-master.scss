@@ -1,14 +1,62 @@
 //UI KIT Styles
+
+/*
+  titte mixin
+  set by default to use large title
+  override this in the selector by using map-get($key,'newfontsize')
+*/
+
 @mixin title(
   $color: map-get($color, primary), 
   $font: map-get($font, primary),
-  $fontsize: map-get($fontsize, large),
+  $fontsize: map-get($fontsize, 'largeTitle'),
   ) {
     font-family: $font;
 		color: $color;
 		position: relative;
     font-size: $fontsize;
 }
+
+/*
+  container sets the padding and content direction
+  paddng can be set for different screensizes
+*/
+
+@mixin container(
+  $usePadding: true,
+  $direction: column 
+  ) {
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: $sm;
+  @if $usePadding == true {
+    padding: 0 7rem;
+  }
+
+  @media screen and (min-width:$md) {
+    max-width: $xxl;
+    @if $usePadding == true {
+      padding: 0 8rem;
+    }
+  }
+
+  @media screen and (min-width:$lg) {
+    display: flex;
+    flex-direction: $direction;
+  }
+
+  @media screen and (min-width:$xlg) {
+		@if $usePadding == true {
+			padding: 0 8rem;
+		}
+  }
+}
+
+/* 
+ * enter px value wrapped in rem() to get px output
+ *
+*/
 
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {

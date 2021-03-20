@@ -25,6 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
 	<header id="masthead" class="site-header">
+  <div class="container">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -53,6 +54,7 @@
 			) );
 			?>
 		</nav><!-- #site-navigation -->
+</div>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

@@ -2,8 +2,20 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
+h1 {
+  @include title(
+    $fontsize: map-get($titleSize,'large'),
+  );
+}
+
 h2 {
-  @include title( 
-    $fontsize: largeTitle 
+  @include title(
+    $fontsize: map-get($titleSize,'medium'),
+  );
+}
+
+h3 {
+  @include title(
+    $fontsize: map-get($titleSize,'small'),
   );
 }
