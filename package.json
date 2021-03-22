@@ -48,7 +48,6 @@
     "file-loader": "^4.2.0",
     "img-loader": "^3.0.1",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
@@ -73,6 +72,7 @@
     "@babel/polyfill": "^7.6.0",
     "jquery": "^3.5.1",
     "mmenu-js": "^8.5.20",
+    "sass": "^1.32.8",
     "svg-url-loader": "^6.0.0"
   }
 }

@@ -10,7 +10,7 @@ $font: (
 );
 
 $titleSize: (
-  "large": 5rem,
+  "large": clamp(30px, 5vw, 50px),
   "medium": 3rem,
   "small": 2rem,
 );
