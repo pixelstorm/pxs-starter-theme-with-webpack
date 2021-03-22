@@ -3,13 +3,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  //@include title( $fontsize: map-get($titleSize,'large'));
+	@include interpolate(font-size, 800px, 1366px, map-get($titleSize, 'medium'), map-get($titleSize, 'large'));
 }
 
-h2 {
-  //@include title( $fontsize: map-get($titleSize,'large'));
-}
-
-h3 {
-  //@include title( $fontsize: map-get($titleSize,'small'));
-}

@@ -21,33 +21,6 @@
 	## Galleries
 --------------------------------------------------------------*/
 /* Single property */
-html {
-  font-size: 14px;
-}
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(0vw + 14px);
-  }
-}
-@media screen and (min-width: 800px) {
-  html {
-    font-size: 14px;
-  }
-}
-html {
-  font-size: 10px;
-}
-@media screen and (min-width: 800px) {
-  html {
-    font-size: calc(6.0070671378vw - 38.0565371025px);
-  }
-}
-@media screen and (min-width: 1366px) {
-  html {
-    font-size: 44px;
-  }
-}
-
 /* Multiple properties with same values */
 h1, h2, h3, h4, h5 {
   padding-top: 0rem;
@@ -66,6 +39,11 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+/*
+
+convert px to rem
+
+*/
 /*
   titte mixin
   set by default to use large title
@@ -430,6 +408,20 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+}
+
+h1 {
+  font-size: 20px;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: calc(3.5335689046vw - 8.2685512367px);
+  }
+}
+@media screen and (min-width: 1366px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 p {

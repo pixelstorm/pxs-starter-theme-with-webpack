@@ -37,8 +37,12 @@
 
 /* Single property */
 html {
-	@include interpolate(font-size, 320px, 800px, 14px, 14px);
-	@include interpolate(font-size, 800px, 1366px, 10px, 44px);
+	//@include interpolate(font-size, 800px, 1366px, 10px, 20px);
+}
+
+h1 {
+
+
 }
 
 /* Multiple properties with same values */
@@ -46,8 +50,20 @@ h1,h2,h3,h4,h5 {
 	@include interpolate((padding-top, padding-bottom), 20rem, 70rem, 0rem, .5rem);
 }
 
+/*
+
+convert px to rem
+
+*/
 
 
+$html-font-size: 16px;
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
 
 //UI KIT Styles
 
